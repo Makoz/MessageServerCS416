@@ -79,12 +79,7 @@ func main() {
     fmt.Println("cf info, ", err)
     return
   }
-  var cfInfo ChainingFunctionInfo
-  cfInfo.GitRepo = "https://github.com/Makoz/SampleRepo.git"
-  cfInfo.FileName = "test3.go"
-  cfInfo.CFName = "2"
-  cfInfo.RepoName = "SampleRepo"
-  cfInfo.ClientIpPort = origCFInfo.ClientIpPort
+  
   
   // fmt.Println("args is: ", args)
   
@@ -92,7 +87,7 @@ func main() {
   b, err := json.Marshal(lom)
 
   var returnVal CFReturnVal
-  returnVal.Ip = "localhost:8000"
+  returnVal.Ip = "localhost:4002"
   returnVal.JsonArgString = string(b)
   // fmt.Println("string b", returnVal.JsonArgString)
   // returnVal.FunArgs = args
