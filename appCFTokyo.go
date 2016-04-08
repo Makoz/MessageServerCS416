@@ -93,7 +93,7 @@ func main() {
   // returnVal.FunArgs = args
   returnVal.ReturnToOrigin = false
   returnVal.ServiceFunName = "MsgServer.AppendMessages"
-  origCFInfo.CFName = "appCF2.go"
+  origCFInfo.CFName = "appCFSeoul.go"
 
   returnVal.CFInfo = origCFInfo
   buff, err := json.Marshal(returnVal)
