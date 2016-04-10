@@ -61,7 +61,7 @@ func main() {
   var lom ListOfMessages
   err := json.Unmarshal([]byte(jsonString), &lom)
   if err != nil {
-    fmt.Println("ERROR 123!!: ", err)
+    fmt.Println("ERROR 123!! CF1: ", err)
     return
     // fmt.Println(err)
   }
@@ -93,8 +93,8 @@ func main() {
   // returnVal.FunArgs = args
   returnVal.ReturnToOrigin = false
   returnVal.ServiceFunName = "MsgServer.AppendMessages"
-  origCFInfo.CFName = "appCF2.go"
-
+  origCFInfo.FileName = "appCF2.go"
+  
   returnVal.CFInfo = origCFInfo
   buff, err := json.Marshal(returnVal)
   if err != nil {
