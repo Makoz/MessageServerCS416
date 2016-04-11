@@ -88,7 +88,7 @@ func main() {
   b, err := json.Marshal(lom)
 
   var returnVal CFReturnVal
-  returnVal.Ip = "52.79.92.65:4002"
+  returnVal.Ip = "52.68.74.211:4010"
   returnVal.JsonArgString = string(b)
   // fmt.Println("string b", returnVal.JsonArgString)
   // returnVal.FunArgs = args
