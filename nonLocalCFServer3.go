@@ -87,13 +87,14 @@ func main() {
   b, err := json.Marshal(lom)
 
   var returnVal CFReturnVal
+
   returnVal.Ip = "128.189.221.124:4001"
   returnVal.JsonArgString = string(b)
   // fmt.Println("string b", returnVal.JsonArgString)
   // returnVal.FunArgs = args
   returnVal.ReturnToOrigin = false
   returnVal.ServiceFunName = "MsgServer.AppendMessages"
-  origCFInfo.CFName = "nonLocalappServer2.go"
+  origCFInfo.CFName = "nonLocalCFServer2.go"
 
   returnVal.CFInfo = origCFInfo
   buff, err := json.Marshal(returnVal)
