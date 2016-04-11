@@ -62,7 +62,7 @@ func main() {
   var lom ListOfMessages
   err := json.Unmarshal([]byte(jsonString), &lom)
   if err != nil {
-    fmt.Println("ERROR 123!!: ", err)
+    fmt.Println("ERROR 123!!: ", err, " jsonString is: ", jsonString)
     return
     // fmt.Println(err)
   }
