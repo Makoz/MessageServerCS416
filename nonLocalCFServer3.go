@@ -95,7 +95,7 @@ func main() {
   returnVal.ReturnToOrigin = false
   returnVal.ServiceFunName = "MsgServer.AppendMessages"
   origCFInfo.CFName = "nonLocalCFServer2.go"
-
+  origCFInfo.FileName = "nonLocalCFServer2.go"
   returnVal.CFInfo = origCFInfo
   buff, err := json.Marshal(returnVal)
   if err != nil {
